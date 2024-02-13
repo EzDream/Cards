@@ -8,6 +8,7 @@
 @testable import Cards
 import XCTest
 
+
 final class RestClient_Tests: XCTestCase {
     var restClient: RestClient!
 
@@ -17,6 +18,17 @@ final class RestClient_Tests: XCTestCase {
 
     override func tearDownWithError() throws {
         restClient = nil
+    }
+
+    func test_ResetClient_ShouldThrowError() async throws {
+        let mockSession = MockURLSession()
+        restClient = RestClient(session: mockSession)
+        do {
+            let _ = try await restClient.apiRequest(URLRequest(url: URL(string: "https://www.google.com")!))
+            XCTFail("apiRequest should throw URLError.badServerResponse, but it did not")
+        } catch let error as URLError {
+            XCTAssertEqual(error.code, .badServerResponse, "Expected URLError.badServerResponse, got \(error.code) instead")
+        }
     }
 
     func test_ResetClient_dev_shouldHaveData() async throws {
