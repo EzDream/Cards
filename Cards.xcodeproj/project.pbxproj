@@ -13,7 +13,6 @@
 		CB0591902B7B247D00DE5EF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB05918F2B7B247D00DE5EF9 /* Preview Assets.xcassets */; };
 		CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591912B7B247D00DE5EF9 /* Persistence.swift */; };
 		CB0591952B7B247D00DE5EF9 /* Cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB0591932B7B247D00DE5EF9 /* Cards.xcdatamodeld */; };
-		CB05919F2B7B247D00DE5EF9 /* CardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05919E2B7B247D00DE5EF9 /* CardsTests.swift */; };
 		CB0591A92B7B247D00DE5EF9 /* CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */; };
 		CB0591AB2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */; };
 		CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591C92B7B260700DE5EF9 /* HTTPClientProtocol.swift */; };
@@ -22,6 +21,10 @@
 		CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591CF2B7B274600DE5EF9 /* API+Private.swift */; };
 		CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591D12B7B286D00DE5EF9 /* API+Public.swift */; };
 		CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591D52B7B2A5900DE5EF9 /* API_Tests.swift */; };
+		CB1BFC4B2B7B2F460001447A /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC4A2B7B2F460001447A /* CardModel.swift */; };
+		CB1BFC4D2B7B30080001447A /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC4C2B7B30080001447A /* APIServiceProtocol.swift */; };
+		CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC4E2B7B304C0001447A /* APIService.swift */; };
+		CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,6 @@
 		CB0591912B7B247D00DE5EF9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CB0591942B7B247D00DE5EF9 /* Cards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cards.xcdatamodel; sourceTree = "<group>"; };
 		CB05919A2B7B247D00DE5EF9 /* CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB05919E2B7B247D00DE5EF9 /* CardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTests.swift; sourceTree = "<group>"; };
 		CB0591A42B7B247D00DE5EF9 /* CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITests.swift; sourceTree = "<group>"; };
 		CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -60,6 +62,10 @@
 		CB0591CF2B7B274600DE5EF9 /* API+Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Private.swift"; sourceTree = "<group>"; };
 		CB0591D12B7B286D00DE5EF9 /* API+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Public.swift"; sourceTree = "<group>"; };
 		CB0591D52B7B2A5900DE5EF9 /* API_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Tests.swift; sourceTree = "<group>"; };
+		CB1BFC4A2B7B2F460001447A /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		CB1BFC4C2B7B30080001447A /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		CB1BFC4E2B7B304C0001447A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				CB0591D32B7B2A0100DE5EF9 /* Data */,
-				CB05919E2B7B247D00DE5EF9 /* CardsTests.swift */,
 			);
 			path = CardsTests;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		CB0591C02B7B24D000DE5EF9 /* DataMapping */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC4A2B7B2F460001447A /* CardModel.swift */,
 			);
 			path = DataMapping;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 		CB0591C22B7B24D000DE5EF9 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC4E2B7B304C0001447A /* APIService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -283,6 +290,7 @@
 		CB0591C72B7B24D000DE5EF9 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC4C2B7B30080001447A /* APIServiceProtocol.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -298,6 +306,7 @@
 		CB0591D32B7B2A0100DE5EF9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC502B7B31AA0001447A /* APIService */,
 				CB0591D42B7B2A0E00DE5EF9 /* API */,
 			);
 			path = Data;
@@ -309,6 +318,14 @@
 				CB0591D52B7B2A5900DE5EF9 /* API_Tests.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CB1BFC502B7B31AA0001447A /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */,
+			);
+			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,8 +465,11 @@
 				CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */,
 				CB0591892B7B247900DE5EF9 /* CardsApp.swift in Sources */,
 				CB0591CC2B7B266100DE5EF9 /* RestClient.swift in Sources */,
+				CB1BFC4D2B7B30080001447A /* APIServiceProtocol.swift in Sources */,
 				CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */,
 				CB0591952B7B247D00DE5EF9 /* Cards.xcdatamodeld in Sources */,
+				CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */,
+				CB1BFC4B2B7B2F460001447A /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,8 +477,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */,
 				CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */,
-				CB05919F2B7B247D00DE5EF9 /* CardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
