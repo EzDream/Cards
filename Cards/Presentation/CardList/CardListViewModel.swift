@@ -17,7 +17,7 @@ class CardListViewModel: ObservableObject {
     init(repo: CardListRepoProtocol) {
         self.repo = repo
         Task {
-           await fetchData()
+            await fetchData()
         }
     }
 

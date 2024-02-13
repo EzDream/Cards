@@ -31,6 +31,8 @@
 		CB1BFC5C2B7C13AD0001447A /* CardListRepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */; };
 		CB1BFC5F2B7C14780001447A /* CardListRepoProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */; };
 		CB1BFC642B7C19350001447A /* CardListViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC632B7C19350001447A /* CardListViewModel_Test.swift */; };
+		CB1BFC672B7C1FA40001447A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CB1BFC662B7C1FA40001447A /* Swinject */; };
+		CB1BFC692B7C207D0001447A /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC682B7C207D0001447A /* DIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,7 @@
 		CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider.swift; sourceTree = "<group>"; };
 		CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider_Tests.swift; sourceTree = "<group>"; };
 		CB1BFC632B7C19350001447A /* CardListViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel_Test.swift; sourceTree = "<group>"; };
+		CB1BFC682B7C207D0001447A /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1BFC672B7C1FA40001447A /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +233,7 @@
 		CB0591BE2B7B24D000DE5EF9 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC682B7C207D0001447A /* DIManager.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -402,6 +407,9 @@
 			dependencies = (
 			);
 			name = Cards;
+			packageProductDependencies = (
+				CB1BFC662B7C1FA40001447A /* Swinject */,
+			);
 			productName = Cards;
 			productReference = CB0591852B7B247900DE5EF9 /* Cards.app */;
 			productType = "com.apple.product-type.application";
@@ -474,6 +482,9 @@
 				Base,
 			);
 			mainGroup = CB05917C2B7B247900DE5EF9;
+			packageReferences = (
+				CB1BFC652B7C1FA40001447A /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = CB0591862B7B247900DE5EF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -518,6 +529,7 @@
 			files = (
 				CB1BFC5C2B7C13AD0001447A /* CardListRepoProvider.swift in Sources */,
 				CB1BFC582B7C119D0001447A /* CardListViewModel.swift in Sources */,
+				CB1BFC692B7C207D0001447A /* DIManager.swift in Sources */,
 				CB1BFC5A2B7C13330001447A /* CardListRepoProtocol.swift in Sources */,
 				CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */,
 				CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */,
@@ -864,6 +876,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB1BFC652B7C1FA40001447A /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB1BFC662B7C1FA40001447A /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB1BFC652B7C1FA40001447A /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CB0591932B7B247D00DE5EF9 /* Cards.xcdatamodeld */ = {
