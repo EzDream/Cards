@@ -29,6 +29,7 @@
 		CB1BFC582B7C119D0001447A /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC572B7C119D0001447A /* CardListViewModel.swift */; };
 		CB1BFC5A2B7C13330001447A /* CardListRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */; };
 		CB1BFC5C2B7C13AD0001447A /* CardListRepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */; };
+		CB1BFC5F2B7C14780001447A /* CardListRepoProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		CB1BFC572B7C119D0001447A /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
 		CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProtocol.swift; sourceTree = "<group>"; };
 		CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider.swift; sourceTree = "<group>"; };
+		CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 		CB0591D32B7B2A0100DE5EF9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC5D2B7C14630001447A /* Repository */,
 				CB1BFC502B7B31AA0001447A /* APIService */,
 				CB0591D42B7B2A0E00DE5EF9 /* API */,
 			);
@@ -354,6 +357,14 @@
 				CB1BFC552B7C0EFB0001447A /* RestClient_Tests.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB1BFC5D2B7C14630001447A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1BFC5F2B7C14780001447A /* CardListRepoProvider_Tests.swift in Sources */,
 				CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */,
 				CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */,
 				CB1BFC562B7C0EFB0001447A /* RestClient_Tests.swift in Sources */,
