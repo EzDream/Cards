@@ -19,6 +19,6 @@ struct CardModel: Identifiable, Decodable {
     let id: Int
     let uid: String
     let creditCardNumber: String?
-    let creditCardExpiry_date: String?
+    let creditCardExpiryDate: String?
     let creditCardType: String?
 }

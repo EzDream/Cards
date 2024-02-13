@@ -25,6 +25,7 @@
 		CB1BFC4D2B7B30080001447A /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC4C2B7B30080001447A /* APIServiceProtocol.swift */; };
 		CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC4E2B7B304C0001447A /* APIService.swift */; };
 		CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */; };
+		CB1BFC562B7C0EFB0001447A /* RestClient_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC552B7C0EFB0001447A /* RestClient_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CB1BFC4C2B7B30080001447A /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		CB1BFC4E2B7B304C0001447A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService_Tests.swift; sourceTree = "<group>"; };
+		CB1BFC552B7C0EFB0001447A /* RestClient_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		CB05919D2B7B247D00DE5EF9 /* CardsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC532B7C0ED60001447A /* Infrastructure */,
 				CB0591D32B7B2A0100DE5EF9 /* Data */,
 			);
 			path = CardsTests;
@@ -328,6 +331,22 @@
 			path = APIService;
 			sourceTree = "<group>";
 		};
+		CB1BFC532B7C0ED60001447A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC542B7C0EE90001447A /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CB1BFC542B7C0EE90001447A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC552B7C0EFB0001447A /* RestClient_Tests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -479,6 +498,7 @@
 			files = (
 				CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */,
 				CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */,
+				CB1BFC562B7C0EFB0001447A /* RestClient_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
