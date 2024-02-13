@@ -26,6 +26,9 @@
 		CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC4E2B7B304C0001447A /* APIService.swift */; };
 		CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */; };
 		CB1BFC562B7C0EFB0001447A /* RestClient_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC552B7C0EFB0001447A /* RestClient_Tests.swift */; };
+		CB1BFC582B7C119D0001447A /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC572B7C119D0001447A /* CardListViewModel.swift */; };
+		CB1BFC5A2B7C13330001447A /* CardListRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */; };
+		CB1BFC5C2B7C13AD0001447A /* CardListRepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		CB1BFC4E2B7B304C0001447A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CB1BFC512B7B31CD0001447A /* APIService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService_Tests.swift; sourceTree = "<group>"; };
 		CB1BFC552B7C0EFB0001447A /* RestClient_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient_Tests.swift; sourceTree = "<group>"; };
+		CB1BFC572B7C119D0001447A /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProtocol.swift; sourceTree = "<group>"; };
+		CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,7 @@
 		CB0591BD2B7B24D000DE5EF9 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 		CB0591C42B7B24D000DE5EF9 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -302,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				CB05918A2B7B247900DE5EF9 /* CardList.swift */,
+				CB1BFC572B7C119D0001447A /* CardListViewModel.swift */,
 			);
 			path = CardList;
 			sourceTree = "<group>";
@@ -477,6 +486,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1BFC5C2B7C13AD0001447A /* CardListRepoProvider.swift in Sources */,
+				CB1BFC582B7C119D0001447A /* CardListViewModel.swift in Sources */,
+				CB1BFC5A2B7C13330001447A /* CardListRepoProtocol.swift in Sources */,
 				CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */,
 				CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */,
 				CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */,
