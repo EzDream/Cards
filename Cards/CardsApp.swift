@@ -13,7 +13,7 @@ struct CardsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardList()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

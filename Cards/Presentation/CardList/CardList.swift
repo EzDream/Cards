@@ -5,10 +5,10 @@
 //  Created by Tesla on 13/02/24.
 //
 
-import SwiftUI
 import CoreData
+import SwiftUI
 
-struct ContentView: View {
+struct CardList: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -82,5 +82,5 @@ private let itemFormatter: DateFormatter = {
 }()
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    CardList().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

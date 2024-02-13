@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB0591892B7B247900DE5EF9 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591882B7B247900DE5EF9 /* CardsApp.swift */; };
-		CB05918B2B7B247900DE5EF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05918A2B7B247900DE5EF9 /* ContentView.swift */; };
+		CB05918B2B7B247900DE5EF9 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05918A2B7B247900DE5EF9 /* CardList.swift */; };
 		CB05918D2B7B247C00DE5EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB05918C2B7B247C00DE5EF9 /* Assets.xcassets */; };
 		CB0591902B7B247D00DE5EF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB05918F2B7B247D00DE5EF9 /* Preview Assets.xcassets */; };
 		CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591912B7B247D00DE5EF9 /* Persistence.swift */; };
@@ -16,6 +16,11 @@
 		CB05919F2B7B247D00DE5EF9 /* CardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05919E2B7B247D00DE5EF9 /* CardsTests.swift */; };
 		CB0591A92B7B247D00DE5EF9 /* CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */; };
 		CB0591AB2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */; };
+		CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591C92B7B260700DE5EF9 /* HTTPClientProtocol.swift */; };
+		CB0591CC2B7B266100DE5EF9 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591CB2B7B266100DE5EF9 /* RestClient.swift */; };
+		CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591CD2B7B270B00DE5EF9 /* APIProtocol.swift */; };
+		CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591CF2B7B274600DE5EF9 /* API+Private.swift */; };
+		CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591D12B7B286D00DE5EF9 /* API+Public.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 /* Begin PBXFileReference section */
 		CB0591852B7B247900DE5EF9 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0591882B7B247900DE5EF9 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
-		CB05918A2B7B247900DE5EF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB05918A2B7B247900DE5EF9 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 		CB05918C2B7B247C00DE5EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB05918F2B7B247D00DE5EF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB0591912B7B247D00DE5EF9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		CB0591A42B7B247D00DE5EF9 /* CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITests.swift; sourceTree = "<group>"; };
 		CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB0591C92B7B260700DE5EF9 /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		CB0591CB2B7B266100DE5EF9 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestClient.swift; path = ../../../../../../../../Applications/RestClient.swift; sourceTree = "<group>"; };
+		CB0591CD2B7B270B00DE5EF9 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		CB0591CF2B7B274600DE5EF9 /* API+Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Private.swift"; sourceTree = "<group>"; };
+		CB0591D12B7B286D00DE5EF9 /* API+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Public.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,11 @@
 		CB0591872B7B247900DE5EF9 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				CB0591BC2B7B24D000DE5EF9 /* Data */,
+				CB0591C32B7B24D000DE5EF9 /* Domain */,
+				CB0591B72B7B24D000DE5EF9 /* Infrastructure */,
+				CB0591BB2B7B24D000DE5EF9 /* Presentation */,
 				CB0591882B7B247900DE5EF9 /* CardsApp.swift */,
-				CB05918A2B7B247900DE5EF9 /* ContentView.swift */,
 				CB05918C2B7B247C00DE5EF9 /* Assets.xcassets */,
 				CB0591912B7B247D00DE5EF9 /* Persistence.swift */,
 				CB0591932B7B247D00DE5EF9 /* Cards.xcdatamodeld */,
@@ -131,6 +144,152 @@
 				CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */,
 			);
 			path = CardsUITests;
+			sourceTree = "<group>";
+		};
+		CB0591B72B7B24D000DE5EF9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591B82B7B24D000DE5EF9 /* Networking */,
+				CB0591B92B7B24D000DE5EF9 /* Mock */,
+				CB0591BA2B7B24D000DE5EF9 /* Extensions */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CB0591B82B7B24D000DE5EF9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591CB2B7B266100DE5EF9 /* RestClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB0591B92B7B24D000DE5EF9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		CB0591BA2B7B24D000DE5EF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB0591BB2B7B24D000DE5EF9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591C82B7B255600DE5EF9 /* CardList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CB0591BC2B7B24D000DE5EF9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591BD2B7B24D000DE5EF9 /* Repository */,
+				CB0591BE2B7B24D000DE5EF9 /* DI */,
+				CB0591BF2B7B24D000DE5EF9 /* Networking */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CB0591BD2B7B24D000DE5EF9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CB0591BE2B7B24D000DE5EF9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CB0591BF2B7B24D000DE5EF9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591C02B7B24D000DE5EF9 /* DataMapping */,
+				CB0591C12B7B24D000DE5EF9 /* API */,
+				CB0591C22B7B24D000DE5EF9 /* APIService */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB0591C02B7B24D000DE5EF9 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		CB0591C12B7B24D000DE5EF9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591D12B7B286D00DE5EF9 /* API+Public.swift */,
+				CB0591CF2B7B274600DE5EF9 /* API+Private.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CB0591C22B7B24D000DE5EF9 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		CB0591C32B7B24D000DE5EF9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591C42B7B24D000DE5EF9 /* Repository */,
+				CB0591C52B7B24D000DE5EF9 /* Networking */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CB0591C42B7B24D000DE5EF9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CB0591C52B7B24D000DE5EF9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591C62B7B24D000DE5EF9 /* API */,
+				CB0591C72B7B24D000DE5EF9 /* APIService */,
+				CB0591C92B7B260700DE5EF9 /* HTTPClientProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB0591C62B7B24D000DE5EF9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591CD2B7B270B00DE5EF9 /* APIProtocol.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CB0591C72B7B24D000DE5EF9 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		CB0591C82B7B255600DE5EF9 /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				CB05918A2B7B247900DE5EF9 /* CardList.swift */,
+			);
+			path = CardList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +422,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */,
+				CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */,
 				CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */,
-				CB05918B2B7B247900DE5EF9 /* ContentView.swift in Sources */,
+				CB05918B2B7B247900DE5EF9 /* CardList.swift in Sources */,
+				CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */,
 				CB0591892B7B247900DE5EF9 /* CardsApp.swift in Sources */,
+				CB0591CC2B7B266100DE5EF9 /* RestClient.swift in Sources */,
+				CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */,
 				CB0591952B7B247D00DE5EF9 /* Cards.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
