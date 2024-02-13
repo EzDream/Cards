@@ -21,8 +21,8 @@ final class CardListViewModel_Test: XCTestCase {
         vm = nil
     }
 
-    func test_CardListViewModel_ShouldHaveCards() throws {
-        sleep(5)
-        XCTAssertNotEqual(vm.cards.count, 0)
+    func test_CardListViewModel_ErrorMessageShouldBeNil() async throws {
+        await vm.fetchData()
+        XCTAssertNil(vm.errorMessage)
     }
 }

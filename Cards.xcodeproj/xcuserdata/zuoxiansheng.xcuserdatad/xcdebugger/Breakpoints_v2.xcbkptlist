@@ -36,5 +36,98 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D8611FB-A6FF-4D2C-8F92-07F337B01328"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cards/Data/Repository/CardListRepoProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchCardList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D8611FB-A6FF-4D2C-8F92-07F337B01328 - 276b7ac073797edd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Cards.CardListRepoProvider.fetchCardList() async throws -&gt; Swift.Array&lt;Cards.CardModel&gt;"
+                  moduleName = "Cards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuoxiansheng/SourceTree/Clean-Architecture/Cards/Cards/Data/Repository/CardListRepoProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "2D8611FB-A6FF-4D2C-8F92-07F337B01328 - cdc421aa23294db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Cards.CardListRepoProvider.fetchCardList() async throws -&gt; Swift.Array&lt;Cards.CardModel&gt;"
+                  moduleName = "Cards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuoxiansheng/SourceTree/Clean-Architecture/Cards/Cards/Data/Repository/CardListRepoProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "2D8611FB-A6FF-4D2C-8F92-07F337B01328 - f1b4d4ec2883c2df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Cards.CardListRepoProvider.fetchCardList() async throws -&gt; Swift.Array&lt;Cards.CardModel&gt;"
+                  moduleName = "Cards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuoxiansheng/SourceTree/Clean-Architecture/Cards/Cards/Data/Repository/CardListRepoProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "2D8611FB-A6FF-4D2C-8F92-07F337B01328 - e766e3fefbb760de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Cards.CardListRepoProvider.fetchCardList() async throws -&gt; Swift.Array&lt;Cards.CardModel&gt;"
+                  moduleName = "Cards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuoxiansheng/SourceTree/Clean-Architecture/Cards/Cards/Data/Repository/CardListRepoProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "2D8611FB-A6FF-4D2C-8F92-07F337B01328 - e766e3fefbb760de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Cards.CardListRepoProvider.fetchCardList() async throws -&gt; Swift.Array&lt;Cards.CardModel&gt;"
+                  moduleName = "Cards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuoxiansheng/SourceTree/Clean-Architecture/Cards/Cards/Data/Repository/CardListRepoProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
