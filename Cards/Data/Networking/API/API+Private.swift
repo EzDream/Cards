@@ -15,7 +15,7 @@ struct API {
     }
 
     internal func api(_ subpath: String) -> URL? {
-        let path = "\(server)/\(subpath)"
+        let path = "\(server.baseURL)/\(subpath)"
         return URL(string: path)
     }
 }

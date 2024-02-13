@@ -21,6 +21,7 @@
 		CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591CD2B7B270B00DE5EF9 /* APIProtocol.swift */; };
 		CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591CF2B7B274600DE5EF9 /* API+Private.swift */; };
 		CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591D12B7B286D00DE5EF9 /* API+Public.swift */; };
+		CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591D52B7B2A5900DE5EF9 /* API_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CB0591CD2B7B270B00DE5EF9 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		CB0591CF2B7B274600DE5EF9 /* API+Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Private.swift"; sourceTree = "<group>"; };
 		CB0591D12B7B286D00DE5EF9 /* API+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Public.swift"; sourceTree = "<group>"; };
+		CB0591D52B7B2A5900DE5EF9 /* API_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		CB05919D2B7B247D00DE5EF9 /* CardsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB0591D32B7B2A0100DE5EF9 /* Data */,
 				CB05919E2B7B247D00DE5EF9 /* CardsTests.swift */,
 			);
 			path = CardsTests;
@@ -292,6 +295,22 @@
 			path = CardList;
 			sourceTree = "<group>";
 		};
+		CB0591D32B7B2A0100DE5EF9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591D42B7B2A0E00DE5EF9 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CB0591D42B7B2A0E00DE5EF9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CB0591D52B7B2A5900DE5EF9 /* API_Tests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */,
 				CB05919F2B7B247D00DE5EF9 /* CardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
