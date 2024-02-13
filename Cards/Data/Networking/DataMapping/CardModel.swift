@@ -18,7 +18,7 @@ import Foundation
 struct CardModel: Identifiable, Decodable {
     let id: Int
     let uid: String
-    let credit_card_number: String?
-    let credit_card_expiry_date: String?
-    let credit_card_type: String?
+    let creditCardNumber: String?
+    let creditCardExpiry_date: String?
+    let creditCardType: String?
 }
