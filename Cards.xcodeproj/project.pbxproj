@@ -30,6 +30,7 @@
 		CB1BFC5A2B7C13330001447A /* CardListRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */; };
 		CB1BFC5C2B7C13AD0001447A /* CardListRepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */; };
 		CB1BFC5F2B7C14780001447A /* CardListRepoProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */; };
+		CB1BFC642B7C19350001447A /* CardListViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC632B7C19350001447A /* CardListViewModel_Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CB1BFC592B7C13330001447A /* CardListRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProtocol.swift; sourceTree = "<group>"; };
 		CB1BFC5B2B7C13AD0001447A /* CardListRepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider.swift; sourceTree = "<group>"; };
 		CB1BFC5E2B7C14780001447A /* CardListRepoProvider_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRepoProvider_Tests.swift; sourceTree = "<group>"; };
+		CB1BFC632B7C19350001447A /* CardListViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		CB05919D2B7B247D00DE5EF9 /* CardsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC602B7C19100001447A /* Presentation */,
 				CB1BFC532B7C0ED60001447A /* Infrastructure */,
 				CB0591D32B7B2A0100DE5EF9 /* Data */,
 			);
@@ -367,6 +370,22 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		CB1BFC602B7C19100001447A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC612B7C191A0001447A /* CardList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CB1BFC612B7C191A0001447A /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC632B7C19350001447A /* CardListViewModel_Test.swift */,
+			);
+			path = CardList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -519,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1BFC642B7C19350001447A /* CardListViewModel_Test.swift in Sources */,
 				CB1BFC5F2B7C14780001447A /* CardListRepoProvider_Tests.swift in Sources */,
 				CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */,
 				CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */,
