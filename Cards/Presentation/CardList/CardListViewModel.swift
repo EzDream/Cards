@@ -26,6 +26,7 @@ class CardListViewModel: ObservableObject {
         do {
             loading = true
             let cards = try await repo.fetchCardList()
+            loading = false
             cardsList = convertToGroup(cards: cards)
         } catch {
             loading = false

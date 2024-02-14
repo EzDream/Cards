@@ -139,8 +139,8 @@
             filePath = "Cards/Presentation/CardList/CardList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -171,8 +171,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "fetchData()"
             landmarkType = "7">
             <Locations>
@@ -249,8 +249,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -265,10 +265,10 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "convertToGroup(cards:)"
-            landmarkType = "7">
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "CardListViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -281,8 +281,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "convertToGroup(cards:)"
             landmarkType = "7">
             <Locations>
@@ -329,8 +329,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "convertToGroup(cards:)"
             landmarkType = "7">
             <Locations>
@@ -377,8 +377,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "convertToGroup(cards:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -393,8 +393,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -409,8 +409,8 @@
             filePath = "Cards/Presentation/CardList/CardListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "convertToGroup(cards:)"
             landmarkType = "7">
          </BreakpointContent>

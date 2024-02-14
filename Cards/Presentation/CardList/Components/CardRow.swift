@@ -10,11 +10,53 @@ import SwiftUI
 struct CardRow: View {
     @ObservedObject var card: CardViewModel
 
-    var bookmark: String {
+    var body: some View {
+        ZStack(alignment: .center) {
+            accountView()
+            cardTypeView()
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 180)
+        .overlay(alignment: .bottomLeading, content: {
+            expireView()
+        })
+        .padding(25)
+        .background(.background)
+        .cornerRadius(20)
+        .padding(.vertical, 15)
+        .shadow(color: .primary.opacity(0.5), radius: 10, x: 0, y: 5)
+    }
+}
+
+extension CardRow {
+    private var bookmark: String {
         return card.isFavorite == true ? "heart.fill" : "heart"
     }
 
-    func cardTypeView() -> some View {
+    private var bookmarkColor: Color {
+        card.isFavorite ? .red : .primary.opacity(0.5)
+    }
+
+    private func accountView() -> some View {
+        Text(card.model.cardNumber)
+            .bold()
+            .font(.system(.title, design: .rounded))
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+    }
+
+    private func expireView() -> some View {
+        HStack(spacing: 5) {
+            Text("Expires:")
+                .font(.footnote)
+                .foregroundColor(.primary.opacity(0.5))
+            Text(card.model.cardExpiryDate)
+                .font(.footnote)
+                .bold()
+        }
+    }
+
+    private func cardTypeView() -> some View {
         VStack {
             HStack {
                 Button {
@@ -24,7 +66,9 @@ struct CardRow: View {
                 } label: {
                     Image(systemName: bookmark)
                         .font(.system(size: 23))
-                        .foregroundColor(card.isFavorite ? .red : .primary.opacity(0.5))
+                        .foregroundColor(
+                            bookmarkColor
+                        )
                 }
                 .buttonStyle(.plain)
                 Spacer()
@@ -36,34 +80,6 @@ struct CardRow: View {
             }
             Spacer()
         }
-    }
-
-    var body: some View {
-        ZStack(alignment: .center) {
-            Text(card.model.cardNumber)
-                .bold()
-                .font(.system(.title, design: .rounded))
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-            cardTypeView()
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 180)
-        .overlay(alignment: .bottomLeading, content: {
-            HStack(spacing: 5) {
-                Text("Expires:")
-                    .font(.footnote)
-                    .foregroundColor(.primary.opacity(0.5))
-                Text(card.model.cardExpiryDate)
-                    .font(.footnote)
-                    .bold()
-            }
-        })
-        .padding(25)
-        .background(.background)
-        .cornerRadius(20)
-        .padding(.vertical, 15)
-        .shadow(color: .primary.opacity(0.5), radius: 10, x: 0, y: 5)
     }
 }
 
