@@ -21,13 +21,11 @@ struct CardList: View {
                                 .listRowSeparator(.hidden)
                         }
                     } header: {
-                        Text(groupCard.title.capitalized)
-                            .bold()
-                            .font(.system(.title, design: .rounded))
-                            .foregroundColor(.red)
+                        sectionTitle(title: groupCard.title)
                     }
                 }
             }
+            .environmentObject(vm)
             .listStyle(.plain)
             .navigationTitle("Cards")
             .navigationBarTitleDisplayMode(.inline)
@@ -42,6 +40,13 @@ struct CardList: View {
 }
 
 private extension CardList {
+    private func sectionTitle(title:String) -> some View {
+        Text(title.capitalized)
+            .bold()
+            .font(.system(.title, design: .rounded))
+            .foregroundColor(.red)
+    }
+
     @ViewBuilder
     private func loadingView() -> some View {
         ZStack {

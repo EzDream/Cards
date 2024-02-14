@@ -15,14 +15,14 @@ extension Array where Element == CardModel {
 
 extension Array where Element == GroupCardModel {
     func favoritedGroupCardModel() -> [GroupCardModel] {
-        compactMap { groupedCardModel in
-            let existingFavourit = groupedCardModel.cards.reduce(false) {
+        return compactMap { groupItem in
+            let isFavourit = groupItem.cards.reduce(false) {
                 $0 || $1.isFavorite
             }
-            if existingFavourit {
-                let cards = groupedCardModel.cards.filter { $0.isFavorite }
-                let newGroupCardModel = GroupCardModel(title: groupedCardModel.title, cards: cards)
-                return newGroupCardModel
+            if isFavourit {
+                let cards = groupItem.cards.filter { $0.isFavorite }
+                let newGroup = GroupCardModel(title: groupItem.title, cards: cards)
+                return newGroup
             } else {
                 return nil
             }

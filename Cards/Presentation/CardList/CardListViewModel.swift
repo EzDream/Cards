@@ -22,7 +22,8 @@ class CardListViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     var allCardList: [GroupCardModel] = []
-
+    @Published var currentMode: FilterType = .all
+    
     var repo: CardListRepoProtocol
 
     init(repo: CardListRepoProtocol) {
@@ -40,6 +41,7 @@ class CardListViewModel: ObservableObject {
     }
 
     private func filterEvent(type: FilterType) {
+        currentMode = type
         switch type {
         case .all:
             showAllList()

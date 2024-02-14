@@ -10,6 +10,8 @@ import SwiftUI
 struct CardRow: View {
     @ObservedObject var card: CardViewModel
 
+    @EnvironmentObject var CardListVM: CardListViewModel
+
     var body: some View {
         ZStack(alignment: .center) {
             accountView()
@@ -62,6 +64,9 @@ extension CardRow {
                 Button {
                     withAnimation {
                         card.isFavorite.toggle()
+                        if card.isFavorite == false && CardListVM.currentMode == .favourite {
+                            CardListVM.onEvent(event: .onFilter(type: .favourite))
+                        }
                     }
                 } label: {
                     Image(systemName: bookmark)
