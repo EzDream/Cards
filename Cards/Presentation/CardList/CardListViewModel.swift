@@ -28,9 +28,10 @@ class CardListViewModel: ObservableObject {
             let cards = try await repo.fetchCardList()
             loading = false
             cardsList = convertToGroup(cards: cards)
+            errorMessage = nil
         } catch {
             loading = false
-            errorMessage = NSLocalizedString("An error occurred", comment: "") + " \(error.localizedDescription)"
+            errorMessage = error.localizedDescription
         }
     }
 

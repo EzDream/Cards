@@ -44,11 +44,28 @@ struct CardList: View {
 private extension CardList {
     @ViewBuilder
     private func loadingView() -> some View {
-        if vm.loading {
-            ProgressView()
-                .progressViewStyle(.circular)
-                .scaleEffect(1.5)
-                .tint(.red)
+        ZStack {
+            if vm.loading {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .scaleEffect(1.5)
+                    .tint(.red)
+            }
+            if let error = vm.errorMessage {
+                VStack(spacing: 15) {
+                    Label(error, systemImage: "wifi.slash")
+                        .foregroundColor(.primary.opacity(0.5))
+                    Button(action: {
+                        Task {
+                            await vm.fetchData()
+                        }
+                    }, label: {
+                        Label("Try again", systemImage: "arrow.circlepath")
+                            .foregroundColor(.red)
+                    })
+                }
+                .padding(.horizontal, 5)
+            }
         }
     }
 
