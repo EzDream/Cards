@@ -11,8 +11,6 @@
 		CB05918B2B7B247900DE5EF9 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05918A2B7B247900DE5EF9 /* CardList.swift */; };
 		CB05918D2B7B247C00DE5EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB05918C2B7B247C00DE5EF9 /* Assets.xcassets */; };
 		CB0591902B7B247D00DE5EF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB05918F2B7B247D00DE5EF9 /* Preview Assets.xcassets */; };
-		CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591912B7B247D00DE5EF9 /* Persistence.swift */; };
-		CB0591952B7B247D00DE5EF9 /* Cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB0591932B7B247D00DE5EF9 /* Cards.xcdatamodeld */; };
 		CB0591A92B7B247D00DE5EF9 /* CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */; };
 		CB0591AB2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */; };
 		CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0591C92B7B260700DE5EF9 /* HTTPClientProtocol.swift */; };
@@ -64,8 +62,6 @@
 		CB05918A2B7B247900DE5EF9 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 		CB05918C2B7B247C00DE5EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB05918F2B7B247D00DE5EF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CB0591912B7B247D00DE5EF9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		CB0591942B7B247D00DE5EF9 /* Cards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cards.xcdatamodel; sourceTree = "<group>"; };
 		CB05919A2B7B247D00DE5EF9 /* CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0591A42B7B247D00DE5EF9 /* CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITests.swift; sourceTree = "<group>"; };
@@ -150,8 +146,6 @@
 				CB0591BB2B7B24D000DE5EF9 /* Presentation */,
 				CB0591882B7B247900DE5EF9 /* CardsApp.swift */,
 				CB05918C2B7B247C00DE5EF9 /* Assets.xcassets */,
-				CB0591912B7B247D00DE5EF9 /* Persistence.swift */,
-				CB0591932B7B247D00DE5EF9 /* Cards.xcdatamodeld */,
 				CB05918E2B7B247D00DE5EF9 /* Preview Content */,
 			);
 			path = Cards;
@@ -577,14 +571,12 @@
 				CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */,
 				CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */,
 				CB1BFC722B7C4D9D0001447A /* MockCards.swift in Sources */,
-				CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */,
 				CB05918B2B7B247900DE5EF9 /* CardList.swift in Sources */,
 				CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */,
 				CB0591892B7B247900DE5EF9 /* CardsApp.swift in Sources */,
 				CB0591CC2B7B266100DE5EF9 /* RestClient.swift in Sources */,
 				CB1BFC4D2B7B30080001447A /* APIServiceProtocol.swift in Sources */,
 				CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */,
-				CB0591952B7B247D00DE5EF9 /* Cards.xcdatamodeld in Sources */,
 				CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */,
 				CBDE2E362B7C543F0089E2D7 /* CardRow.swift in Sources */,
 				CB1BFC4B2B7B2F460001447A /* CardModel.swift in Sources */,
@@ -947,19 +939,6 @@
 			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		CB0591932B7B247D00DE5EF9 /* Cards.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CB0591942B7B247D00DE5EF9 /* Cards.xcdatamodel */,
-			);
-			currentVersion = CB0591942B7B247D00DE5EF9 /* Cards.xcdatamodel */;
-			path = Cards.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CB05917D2B7B247900DE5EF9 /* Project object */;
 }
