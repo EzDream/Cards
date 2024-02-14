@@ -27,7 +27,7 @@ struct CardList: View {
             }
             .environmentObject(vm)
             .listStyle(.plain)
-            .navigationTitle("Cards")
+            .navigationTitle(vm.currentMode.rawValue)
             .navigationBarTitleDisplayMode(.inline)
             .overlay(content: {
                 loadingView()
@@ -40,7 +40,7 @@ struct CardList: View {
 }
 
 private extension CardList {
-    private func sectionTitle(title:String) -> some View {
+    private func sectionTitle(title: String) -> some View {
         Text(title.capitalized)
             .bold()
             .font(.system(.title, design: .rounded))
@@ -55,6 +55,12 @@ private extension CardList {
                     .progressViewStyle(.circular)
                     .scaleEffect(1.5)
                     .tint(.red)
+            } else {
+                if vm.currentMode == .favourite && vm.cardsList.count == 0 {
+                    Text("No favourite Cards")
+                        .foregroundStyle(.primary.opacity(0.5))
+                        .font(.headline)
+                }
             }
             if let error = vm.errorMessage {
                 VStack(spacing: 15) {

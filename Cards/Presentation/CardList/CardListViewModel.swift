@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum FilterType {
-    case all
-    case favourite
+enum FilterType: String {
+    case all = "All Cards"
+    case favourite = "Favorite Cards"
 }
 
 enum CardListEvent {
@@ -23,7 +23,7 @@ class CardListViewModel: ObservableObject {
 
     var allCardList: [GroupCardModel] = []
     @Published var currentMode: FilterType = .all
-    
+
     var repo: CardListRepoProtocol
 
     init(repo: CardListRepoProtocol) {
@@ -45,10 +45,8 @@ class CardListViewModel: ObservableObject {
         switch type {
         case .all:
             showAllList()
-            break
         case .favourite:
             showFilteredList()
-            break
         }
     }
 
