@@ -70,7 +70,7 @@
 		CB0591A82B7B247D00DE5EF9 /* CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITests.swift; sourceTree = "<group>"; };
 		CB0591AA2B7B247D00DE5EF9 /* CardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB0591C92B7B260700DE5EF9 /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
-		CB0591CB2B7B266100DE5EF9 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestClient.swift; path = ../../../../../../../../Applications/RestClient.swift; sourceTree = "<group>"; };
+		CB0591CB2B7B266100DE5EF9 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		CB0591CD2B7B270B00DE5EF9 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		CB0591CF2B7B274600DE5EF9 /* API+Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Private.swift"; sourceTree = "<group>"; };
 		CB0591D12B7B286D00DE5EF9 /* API+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Public.swift"; sourceTree = "<group>"; };
