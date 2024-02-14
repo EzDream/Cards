@@ -32,7 +32,7 @@ final class CardListViewModel_Test: XCTestCase {
         if groupedCardList.count > 2 {
             let firstCard = groupedCardList[0]
             let nextRandomCard = Array(groupedCardList.dropFirst()).randomElement()!
-            XCTAssertTrue(firstCard.first!.cardType < nextRandomCard.first!.cardType)
+            XCTAssertTrue(firstCard.title < nextRandomCard.title)
         }
     }
 }

@@ -37,6 +37,7 @@
 		CB1BFC722B7C4D9D0001447A /* MockCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC712B7C4D9D0001447A /* MockCards.swift */; };
 		CB1BFC752B7C4E490001447A /* MockCards_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC742B7C4E490001447A /* MockCards_Test.swift */; };
 		CBDE2E362B7C543F0089E2D7 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE2E352B7C543F0089E2D7 /* CardRow.swift */; };
+		CBDE2E392B7C68A60089E2D7 /* GroupCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE2E382B7C68A60089E2D7 /* GroupCardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		CB1BFC712B7C4D9D0001447A /* MockCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCards.swift; sourceTree = "<group>"; };
 		CB1BFC742B7C4E490001447A /* MockCards_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCards_Test.swift; sourceTree = "<group>"; };
 		CBDE2E352B7C543F0089E2D7 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
+		CBDE2E382B7C68A60089E2D7 /* GroupCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 		CB0591BC2B7B24D000DE5EF9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CBDE2E372B7C688A0089E2D7 /* Model */,
 				CB0591BD2B7B24D000DE5EF9 /* Repository */,
 				CB0591BE2B7B24D000DE5EF9 /* DI */,
 				CB0591BF2B7B24D000DE5EF9 /* Networking */,
@@ -427,6 +430,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CBDE2E372B7C688A0089E2D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBDE2E382B7C68A60089E2D7 /* GroupCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -575,6 +586,7 @@
 				CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */,
 				CB0591892B7B247900DE5EF9 /* CardsApp.swift in Sources */,
 				CB0591CC2B7B266100DE5EF9 /* RestClient.swift in Sources */,
+				CBDE2E392B7C68A60089E2D7 /* GroupCardModel.swift in Sources */,
 				CB1BFC4D2B7B30080001447A /* APIServiceProtocol.swift in Sources */,
 				CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */,
 				CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 
 class CardListViewModel: ObservableObject {
     @Published var cards: [CardModel] = []
-    @Published var cardsList: [[CardModel]] = [[]]
+    @Published var cardsList: [GroupCardModel] = []
     @Published var loading: Bool = false
     @Published var errorMessage: String?
 
@@ -35,12 +35,18 @@ class CardListViewModel: ObservableObject {
         }
     }
 
-    private func convertToGroup(cards: [CardModel]) -> [[CardModel]] {
+    private func convertToGroup(cards: [CardModel]) -> [GroupCardModel] {
         let groupedDictionary = Dictionary(grouping: cards) {
             $0.cardType
         }
         let cardTypes = groupedDictionary.keys.sorted()
-        let groupedCardsList = cardTypes.compactMap { groupedDictionary[$0] }
+        let groupedCardsList = cardTypes.compactMap { key in
+            if let cards = groupedDictionary[key] {
+                return GroupCardModel(title: key, cards: cards)
+            } else {
+                return nil
+            }
+        }
         return groupedCardsList
     }
 }

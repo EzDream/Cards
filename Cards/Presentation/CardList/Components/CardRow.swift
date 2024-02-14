@@ -16,20 +16,20 @@ struct CardRow: View {
 
     var body: some View {
         ZStack {
-            Text(card.creditCardNumber ?? "")
+            Text(card.cardNumber)
                 .bold()
                 .font(.system(.title, design: .rounded))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
         }
         .frame(maxWidth: .infinity)
-        .frame(maxHeight: 180)
+        .frame(height: 180)
         .overlay(alignment: .bottomLeading, content: {
             HStack(spacing: 5) {
                 Text("Expires:")
                     .font(.footnote)
                     .foregroundColor(.primary.opacity(0.5))
-                Text(card.creditCardExpiryDate ?? "")
+                Text(card.cardExpiryDate)
                     .font(.footnote)
                     .bold()
             }
@@ -40,20 +40,21 @@ struct CardRow: View {
                     card.bookmark?.toggle()
                 } label: {
                     Image(systemName: bookmark)
-                        .font(.system(size: 24))
-                        .foregroundStyle(.red)
+                        .font(.system(size: 20))
                 }
 
                 Spacer()
-                Text(card.creditCardType ?? "")
+                Text(card.cardType.capitalized)
                     .bold()
-                    .font(.system(.largeTitle, design: .serif))
+                    .font(.system(.headline, design: .monospaced))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
             }
         })
         .padding(25)
         .background(.background)
         .cornerRadius(20)
-        .padding()
+        .padding(.vertical, 15)
         .shadow(color: .primary.opacity(0.5), radius: 10, x: 0, y: 5)
     }
 }
