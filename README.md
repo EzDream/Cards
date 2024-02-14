@@ -2,7 +2,7 @@
 
 
 
-The project  (0 warnning, Xcode15.2) was built on Clean architecture, MVVM pattern, and SOLID principles. It implements dependency injection of abstract interfaces (protocols) with **Swinject**, covering a test coverage of **81.5%**.
+The project  (**0 warnning, Xcode15.2**) was built on **Clean architecture**, **MVVM** pattern, and **SOLID principles**. It implements dependency injection of abstract interfaces (protocols) with **Swinject**, covering a test coverage of **81.5%**.
 
 
 
@@ -34,15 +34,15 @@ The project  (0 warnning, Xcode15.2) was built on Clean architecture, MVVM patte
 
 ### Architecture diagram:
 
-![image-20240214213930190](./assets/image-20240214213930190.png)
+<img src="./assets/image-20240214213930190.png" alt="image-20240214213930190" style="zoom: 40%;" />
 
 ### ScreenShots:
 
-Support Dark mode by configuring custom color assets using Xcode’s asset editor.
+Support Dark mode.
 
 <img src="./assets/image-20240214211435346.png" alt="image-20240214211435346" style="zoom:50%;" />
 
-<img src="./assets/image-20240214212018932.png" alt="image-20240214212018932" style="zoom: 30%;" />
+<img src="./assets/image-20240214212018932.png" alt="image-20240214212018932" style="zoom: 50%;" />
 
 ### Test Coverage
 
