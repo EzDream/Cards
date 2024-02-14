@@ -35,6 +35,10 @@
 		CB1BFC692B7C207D0001447A /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC682B7C207D0001447A /* DIManager.swift */; };
 		CB1BFC6C2B7C25230001447A /* DIManager_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC6B2B7C25230001447A /* DIManager_Test.swift */; };
 		CB1BFC6E2B7C2BCC0001447A /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC6D2B7C2BCC0001447A /* MockURLSession.swift */; };
+		CB1BFC702B7C4D820001447A /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = CB1BFC6F2B7C4D820001447A /* Cards.json */; };
+		CB1BFC722B7C4D9D0001447A /* MockCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC712B7C4D9D0001447A /* MockCards.swift */; };
+		CB1BFC752B7C4E490001447A /* MockCards_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC742B7C4E490001447A /* MockCards_Test.swift */; };
+		CBDE2E362B7C543F0089E2D7 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE2E352B7C543F0089E2D7 /* CardRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		CB1BFC682B7C207D0001447A /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 		CB1BFC6B2B7C25230001447A /* DIManager_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager_Test.swift; sourceTree = "<group>"; };
 		CB1BFC6D2B7C2BCC0001447A /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		CB1BFC6F2B7C4D820001447A /* Cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
+		CB1BFC712B7C4D9D0001447A /* MockCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCards.swift; sourceTree = "<group>"; };
+		CB1BFC742B7C4E490001447A /* MockCards_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCards_Test.swift; sourceTree = "<group>"; };
+		CBDE2E352B7C543F0089E2D7 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,8 @@
 		CB0591B92B7B24D000DE5EF9 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC6F2B7C4D820001447A /* Cards.json */,
+				CB1BFC712B7C4D9D0001447A /* MockCards.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -323,6 +333,7 @@
 		CB0591C82B7B255600DE5EF9 /* CardList */ = {
 			isa = PBXGroup;
 			children = (
+				CBDE2E342B7C542F0089E2D7 /* Components */,
 				CB05918A2B7B247900DE5EF9 /* CardList.swift */,
 				CB1BFC572B7C119D0001447A /* CardListViewModel.swift */,
 			);
@@ -359,6 +370,7 @@
 		CB1BFC532B7C0ED60001447A /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BFC732B7C4E360001447A /* Mock */,
 				CB1BFC542B7C0EE90001447A /* Networking */,
 			);
 			path = Infrastructure;
@@ -403,6 +415,22 @@
 				CB1BFC6B2B7C25230001447A /* DIManager_Test.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		CB1BFC732B7C4E360001447A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BFC742B7C4E490001447A /* MockCards_Test.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		CBDE2E342B7C542F0089E2D7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CBDE2E352B7C543F0089E2D7 /* CardRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +545,7 @@
 			files = (
 				CB0591902B7B247D00DE5EF9 /* Preview Assets.xcassets in Resources */,
 				CB05918D2B7B247C00DE5EF9 /* Assets.xcassets in Resources */,
+				CB1BFC702B7C4D820001447A /* Cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +576,7 @@
 				CB1BFC5A2B7C13330001447A /* CardListRepoProtocol.swift in Sources */,
 				CB0591CA2B7B260700DE5EF9 /* HTTPClientProtocol.swift in Sources */,
 				CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */,
+				CB1BFC722B7C4D9D0001447A /* MockCards.swift in Sources */,
 				CB0591922B7B247D00DE5EF9 /* Persistence.swift in Sources */,
 				CB05918B2B7B247900DE5EF9 /* CardList.swift in Sources */,
 				CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */,
@@ -556,6 +586,7 @@
 				CB0591D02B7B274600DE5EF9 /* API+Private.swift in Sources */,
 				CB0591952B7B247D00DE5EF9 /* Cards.xcdatamodeld in Sources */,
 				CB1BFC4F2B7B304C0001447A /* APIService.swift in Sources */,
+				CBDE2E362B7C543F0089E2D7 /* CardRow.swift in Sources */,
 				CB1BFC4B2B7B2F460001447A /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +600,7 @@
 				CB1BFC6C2B7C25230001447A /* DIManager_Test.swift in Sources */,
 				CB1BFC522B7B31CD0001447A /* APIService_Tests.swift in Sources */,
 				CB1BFC6E2B7C2BCC0001447A /* MockURLSession.swift in Sources */,
+				CB1BFC752B7C4E490001447A /* MockCards_Test.swift in Sources */,
 				CB0591D62B7B2A5900DE5EF9 /* API_Tests.swift in Sources */,
 				CB1BFC562B7C0EFB0001447A /* RestClient_Tests.swift in Sources */,
 			);
@@ -734,6 +766,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,6 +796,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -785,7 +819,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3UG88NF5J;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nzdream.CardsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -805,7 +839,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3UG88NF5J;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nzdream.CardsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -824,6 +858,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3UG88NF5J;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nzdream.CardsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,6 +877,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3UG88NF5J;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nzdream.CardsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

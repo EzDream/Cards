@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct CardsApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            CardList()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            CardList(vm: DIManager.shared.resolve(CardListViewModel.self)!)
         }
     }
 }

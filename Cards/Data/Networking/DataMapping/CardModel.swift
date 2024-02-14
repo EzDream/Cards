@@ -22,3 +22,9 @@ struct CardModel: Identifiable, Decodable {
     let creditCardExpiryDate: String?
     let creditCardType: String?
 }
+
+extension CardModel: Equatable {
+    static func == (lhs: CardModel, rhs: CardModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

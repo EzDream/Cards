@@ -10,7 +10,7 @@ import Foundation
 
 class MockURLSession: URLSessionProtocol {
     let urlResponse = HTTPURLResponse(url: URL(string: "https://www.google.com")!,
-                                      statusCode: 404, // 非200状态码
+                                      statusCode: 404,
                                       httpVersion: nil,
                                       headerFields: nil)!
 
