@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct CardRow: View {
-    var card: CardModel
+    @ObservedObject var card: CardViewModel
 
     var bookmark: String {
-        return card.bookmark == true ? "heart.fill" : "heart"
+        return card.isFavorite == true ? "heart.fill" : "heart"
     }
 
     var body: some View {
         ZStack {
-            Text(card.cardNumber)
+            Text(card.model.cardNumber)
                 .bold()
                 .font(.system(.title, design: .rounded))
                 .lineLimit(1)
@@ -29,7 +29,7 @@ struct CardRow: View {
                 Text("Expires:")
                     .font(.footnote)
                     .foregroundColor(.primary.opacity(0.5))
-                Text(card.cardExpiryDate)
+                Text(card.model.cardExpiryDate)
                     .font(.footnote)
                     .bold()
             }
@@ -37,14 +37,15 @@ struct CardRow: View {
         .overlay(alignment: .top, content: {
             HStack {
                 Button {
-                    card.bookmark?.toggle()
+                    card.isFavorite.toggle()
                 } label: {
                     Image(systemName: bookmark)
                         .font(.system(size: 20))
                 }
+                .background(.red)
 
                 Spacer()
-                Text(card.cardType.capitalized)
+                Text(card.model.cardType.capitalized)
                     .bold()
                     .font(.system(.headline, design: .monospaced))
                     .lineLimit(1)
@@ -60,5 +61,5 @@ struct CardRow: View {
 }
 
 #Preview {
-    CardRow(card: MockCards.card)
+    CardRow(card: CardViewModel(cards: MockCards.card))
 }

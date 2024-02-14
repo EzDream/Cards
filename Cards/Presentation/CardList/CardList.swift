@@ -25,14 +25,25 @@ struct CardList: View {
                             .bold()
                             .font(.system(.title, design: .rounded))
                             .foregroundColor(.red)
-
                     }
                 }
             }
             .listStyle(.plain)
+            .navigationTitle("Cards")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                    Menu {
+                        Button {} label: {
+                            Label("All", systemImage: "text.justify")
+                        }
+
+                        Button {} label: {
+                            Label("Favorites", systemImage: "heart")
+                        }
+                    } label: {
+                        Image(systemName: "line.3.horizontal.decrease.circle")
+                    }
                 }
             }
         }

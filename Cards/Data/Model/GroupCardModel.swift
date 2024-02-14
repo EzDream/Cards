@@ -7,11 +7,16 @@
 
 import Foundation
 
-struct GroupCardModel: Identifiable {
-    var title: String
-    var cards: [CardModel]
+class GroupCardModel: Identifiable {
+    var title: String = ""
+    var cards: [CardViewModel] = []
 
     var id: String {
         return title
+    }
+    
+    init(title: String, cards: [CardViewModel]) {
+        self.title = title
+        self.cards = cards
     }
 }

@@ -8,7 +8,6 @@
 import Foundation
 
 class CardListViewModel: ObservableObject {
-    @Published var cards: [CardModel] = []
     @Published var cardsList: [GroupCardModel] = []
     @Published var loading: Bool = false
     @Published var errorMessage: String?
@@ -27,7 +26,6 @@ class CardListViewModel: ObservableObject {
         do {
             loading = true
             let cards = try await repo.fetchCardList()
-            self.cards = cards
             cardsList = convertToGroup(cards: cards)
         } catch {
             loading = false
@@ -42,7 +40,8 @@ class CardListViewModel: ObservableObject {
         let cardTypes = groupedDictionary.keys.sorted()
         let groupedCardsList = cardTypes.compactMap { key in
             if let cards = groupedDictionary[key] {
-                return GroupCardModel(title: key, cards: cards)
+                let cardViewModels = cards.map { CardViewModel(cards: $0) }
+                return GroupCardModel(title: key, cards: cardViewModels)
             } else {
                 return nil
             }

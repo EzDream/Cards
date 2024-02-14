@@ -38,6 +38,7 @@
 		CB1BFC752B7C4E490001447A /* MockCards_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BFC742B7C4E490001447A /* MockCards_Test.swift */; };
 		CBDE2E362B7C543F0089E2D7 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE2E352B7C543F0089E2D7 /* CardRow.swift */; };
 		CBDE2E392B7C68A60089E2D7 /* GroupCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE2E382B7C68A60089E2D7 /* GroupCardModel.swift */; };
+		CBDE2E3B2B7C75470089E2D7 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE2E3A2B7C75470089E2D7 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		CB1BFC742B7C4E490001447A /* MockCards_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCards_Test.swift; sourceTree = "<group>"; };
 		CBDE2E352B7C543F0089E2D7 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 		CBDE2E382B7C68A60089E2D7 /* GroupCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCardModel.swift; sourceTree = "<group>"; };
+		CBDE2E3A2B7C75470089E2D7 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -434,6 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				CBDE2E382B7C68A60089E2D7 /* GroupCardModel.swift */,
+				CBDE2E3A2B7C75470089E2D7 /* CardViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				CB0591CE2B7B270B00DE5EF9 /* APIProtocol.swift in Sources */,
 				CB1BFC722B7C4D9D0001447A /* MockCards.swift in Sources */,
 				CB05918B2B7B247900DE5EF9 /* CardList.swift in Sources */,
+				CBDE2E3B2B7C75470089E2D7 /* CardViewModel.swift in Sources */,
 				CB0591D22B7B286D00DE5EF9 /* API+Public.swift in Sources */,
 				CB0591892B7B247900DE5EF9 /* CardsApp.swift in Sources */,
 				CB0591CC2B7B266100DE5EF9 /* RestClient.swift in Sources */,
