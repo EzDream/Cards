@@ -72,11 +72,15 @@ private extension CardList {
     private func toobarView() -> some ToolbarContent {
         return ToolbarItem(placement: .navigationBarTrailing) {
             Menu {
-                Button {} label: {
+                Button {
+                    vm.onEvent(event: .onFilter(type: .all))
+                } label: {
                     Label("All", systemImage: "text.justify")
                 }
 
-                Button {} label: {
+                Button {
+                    vm.onEvent(event: .onFilter(type: .favourite))
+                } label: {
                     Label("Favorites", systemImage: "heart")
                 }
             } label: {
