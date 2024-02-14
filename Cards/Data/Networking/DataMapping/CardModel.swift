@@ -15,12 +15,28 @@ import Foundation
 // credit_card_type: "laser"
 // }
 
-struct CardModel: Identifiable, Decodable {
+extension CardModel {
+    var cardType: String {
+        return creditCardType ?? "Nan"
+    }
+
+    var cardNumber: String {
+        return creditCardNumber ?? "Nan"
+    }
+
+    var cardExpiryDate: String {
+        return creditCardExpiryDate ?? "Nan"
+    }
+}
+
+class CardModel: Identifiable, Decodable {
     let id: Int
     let uid: String
     let creditCardNumber: String?
     let creditCardExpiryDate: String?
     let creditCardType: String?
+
+    var bookmark: Bool? = false
 }
 
 extension CardModel: Equatable {

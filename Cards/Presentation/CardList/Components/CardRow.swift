@@ -9,6 +9,11 @@ import SwiftUI
 
 struct CardRow: View {
     var card: CardModel
+
+    var bookmark: String {
+        return card.bookmark == true ? "heart.fill" : "heart"
+    }
+
     var body: some View {
         ZStack {
             Text(card.creditCardNumber ?? "")
@@ -31,6 +36,14 @@ struct CardRow: View {
         })
         .overlay(alignment: .top, content: {
             HStack {
+                Button {
+                    card.bookmark?.toggle()
+                } label: {
+                    Image(systemName: bookmark)
+                        .font(.system(size: 24))
+                        .foregroundStyle(.red)
+                }
+
                 Spacer()
                 Text(card.creditCardType ?? "")
                     .bold()

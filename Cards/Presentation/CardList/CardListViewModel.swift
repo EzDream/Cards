@@ -9,6 +9,7 @@ import Foundation
 
 class CardListViewModel: ObservableObject {
     @Published var cards: [CardModel] = []
+    @Published var cardsList: [[CardModel]] = [[]]
     @Published var loading: Bool = false
     @Published var errorMessage: String?
 
@@ -27,9 +28,19 @@ class CardListViewModel: ObservableObject {
             loading = true
             let cards = try await repo.fetchCardList()
             self.cards = cards
+            cardsList = convertToGroup(cards: cards)
         } catch {
             loading = false
             errorMessage = NSLocalizedString("An error occurred", comment: "") + " \(error.localizedDescription)"
         }
+    }
+
+    private func convertToGroup(cards: [CardModel]) -> [[CardModel]] {
+        let groupedDictionary = Dictionary(grouping: cards) {
+            $0.cardType
+        }
+        let cardTypes = groupedDictionary.keys.sorted()
+        let groupedCardsList = cardTypes.compactMap { groupedDictionary[$0] }
+        return groupedCardsList
     }
 }

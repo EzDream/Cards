@@ -122,7 +122,6 @@
 			children = (
 				CB0591872B7B247900DE5EF9 /* Cards */,
 				CB05919D2B7B247D00DE5EF9 /* CardsTests */,
-				CB0591A72B7B247D00DE5EF9 /* CardsUITests */,
 				CB0591862B7B247900DE5EF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +161,7 @@
 		CB05919D2B7B247D00DE5EF9 /* CardsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB0591A72B7B247D00DE5EF9 /* CardsUITests */,
 				CB1BFC602B7C19100001447A /* Presentation */,
 				CB1BFC532B7C0ED60001447A /* Infrastructure */,
 				CB0591D32B7B2A0100DE5EF9 /* Data */,

@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-
-struct MockCards {
+class MockCards {
     static var card: CardModel {
         return cardList.first!
     }

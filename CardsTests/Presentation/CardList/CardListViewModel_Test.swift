@@ -25,4 +25,14 @@ final class CardListViewModel_Test: XCTestCase {
         await vm.fetchData()
         XCTAssertNil(vm.errorMessage)
     }
+
+    func test_CardListViewModel_GroupedArray() async throws {
+        await vm.fetchData()
+        let groupedCardList = vm.cardsList
+        if groupedCardList.count > 2 {
+            let firstCard = groupedCardList[0]
+            let nextRandomCard = Array(groupedCardList.dropFirst()).randomElement()!
+            XCTAssertTrue(firstCard.first!.cardType < nextRandomCard.first!.cardType)
+        }
+    }
 }
